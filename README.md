@@ -1,6 +1,6 @@
-# github-profiles-vue
+# store-front
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a frontend project to practice VUE consuming the [Fake Store API](https://fakestoreapi.com/)
 
 ## Recommended IDE Setup
 
