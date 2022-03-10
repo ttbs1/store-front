@@ -9,7 +9,7 @@ export default {
 
 <template>
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">{{text}}</a>
+        <router-link to="/home">{{text}}</router-link>
     </li>
 </template>
 
