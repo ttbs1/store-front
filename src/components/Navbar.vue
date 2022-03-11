@@ -25,7 +25,7 @@
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<NavItem text="Home"></NavItem>
+							<NavItem text="Home" href="/"></NavItem>
 							<li class="nav-item dropdown">
 								<a
 									class="nav-link dropdown-toggle"
@@ -51,10 +51,10 @@
 								</ul>
 							</li>
 							
-							<NavItem text="About"></NavItem>
-							<NavItem text="FAQs"></NavItem>
-							<NavItem text="Checkout"></NavItem>
-							<NavItem text="Contact"></NavItem>
+							<NavItem text="About" href="/about"></NavItem>
+							<NavItem text="FAQs" href="/faqs"></NavItem>
+							<NavItem text="Checkout" href="/checkout"></NavItem>
+							<NavItem text="Contact" href="/contact"></NavItem>
 						</ul>
 					</div>
 				</div>

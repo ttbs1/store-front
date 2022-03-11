@@ -9,7 +9,7 @@ export default {
 
 <template>
     <li class="nav-item">
-        <router-link to="/home">{{text}}</router-link>
+        <router-link :to="href">{{text}}</router-link>
     </li>
 </template>
 
