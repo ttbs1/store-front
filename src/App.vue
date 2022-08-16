@@ -2,7 +2,6 @@
 	<header>
 		<Navbar />
 	</header>
-
 	<main>
 		<router-view></router-view>
 	</main>
