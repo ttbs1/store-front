@@ -6,6 +6,7 @@
 				<form class="d-flex">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
 					<button class="btn btn-outline-success" type="submit">Search</button>
+					<font-awesome-icon icon="fa-solid fa-cart-shopping" class="btn btn-lg btn-outline-warning mx-2"/>
 				</form>
 			</div>
 		</div>
@@ -26,16 +27,11 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item" >
-								<div class="dropdown" style="background-color: #ffd202; width: 18em; height: 100%;">
-									<button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between;">
+								<div class="" style="background-color: #ffd202; width: 18em; height: 100%;">
+									<a href="/" class="btn" type="button" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between;">
 										<span>Categories</span> 
 										<span><font-awesome-icon icon="fa-solid fa-bars" /></span>
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-										<li v-for="item in result">
-											<a class="dropdown-item" :href="`${ item.replace(/[^A-Z0-9]+/ig, '') }`">{{ item }}</a>
-										</li>
-									</ul>
+									</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -62,32 +58,6 @@
 </template>
 
 <script>
-import NavItem from "./NavItem.vue";
-import axios from 'axios';
-
-
-export default {
-	components: {
-		NavItem
-	},
-	name: 'navBar',
-    data () {
-        return {
-            result: '',
-        }
-    },
-    mounted () {
-        this.getResult()
-    },
-    methods: {
-        getResult() {
-            axios.get('https://fakestoreapi.com/products/categories').then(response => {
-                console.log(response.data)
-                this.result = response.data;
-            });
-        }
-    }
-}
 </script>
 
 <style>
