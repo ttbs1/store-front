@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid d-flex justify-content-center my-5">
-        <div class="d-flex row justify-content-around">
-            <div class="col-auto row" v-for="product in bestSellers">
+        <div class="d-flex col-10 row justify-content-around">
+            <div class="col-auto row" v-for="product in products">
                 <ProductCard :product="product"></ProductCard>
             </div>
         </div>
@@ -13,11 +13,11 @@ import axios from 'axios';
 import ProductCard from "./ProductCard.vue";
 
 export default {
-
-    name: "BestSellers",
+    name: "Category",
     data () {
         return {
-            bestSellers: ''
+            category: this.$route.params.category,
+            products: ''
         }
     },
     mounted () {
@@ -25,18 +25,9 @@ export default {
     },
     methods: {
         getProducts() {
-            axios.get('https://fakestoreapi.com/products').then(response => {
+            axios.get('https://fakestoreapi.com/products/category/' + this.category).then(response => {
                 console.log(response.data);
                 this.products = response.data;
-                
-                let ratings = response.data.map((x) => {
-                    return x.rating.rate;
-                });
-                let topRating = ([...ratings].sort((a, b) => b - a).slice(0, 5))[4];
-                this.bestSellers = response.data.filter((x) => {
-                    return x.rating.rate >= topRating;
-                });
-                console.log(this.bestSellers)
             });
         }
     },

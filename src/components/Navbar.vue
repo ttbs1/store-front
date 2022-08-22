@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="bg-sublight">
-			<div class="navbar navbar-expand-lg navbar-light bg-sublight container ps-3 py-0">
+			<div class="navbar navbar-expand-lg navbar-light bg-sublight container ps-5 py-0">
 				<div class="container-fluid d-flex justify-content-end">
 					<button
 						class="navbar-toggler"
@@ -38,16 +38,16 @@
 								<a class="nav-link active ps-3" aria-current="page" href="/">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active ps-3" aria-current="page" href="about">About</a>
+								<a class="nav-link active ps-3" aria-current="page" href="/about">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active ps-3" aria-current="page" href="faqs">FAQs</a>
+								<a class="nav-link active ps-3" aria-current="page" href="/faqs">FAQs</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active ps-3" aria-current="page" href="checkout">Checkout</a>
+								<a class="nav-link active ps-3" aria-current="page" href="/checkout">Checkout</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active ps-3" aria-current="page" href="contact">Contact</a>
+								<a class="nav-link active ps-3" aria-current="page" href="/contact">Contact</a>
 							</li>
 						</ul>
 					</div>

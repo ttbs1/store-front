@@ -1,10 +1,9 @@
 <template>
-    <header class="d-flex justify-content-center m-3">
-        <div class="row">
+    <header class="d-flex row justify-content-around m-3">
             <div class="header-categories col-auto d-flex justify-content-center">
                 <ul>
                     <li class="mb-1" v-for="item in categories">
-                        <a class="dropdown-item" :href="`${ item.replace(/[^A-Z0-9]+/ig, '') }`">{{ item }}</a>
+                        <a class="dropdown-item" :href="`${ item /*item.replace(/[^A-Z0-9]+/ig, '')*/ }`">{{ item }}</a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +47,6 @@
                     </button>
                 </div>
             </div>
-        </div>
     </header>
 </template>
 
