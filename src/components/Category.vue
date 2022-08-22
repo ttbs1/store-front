@@ -1,5 +1,8 @@
 <template>
-    <div class="container-fluid d-flex justify-content-center my-5">
+    <div class="container mt-5">
+        <h1 class="text-capitalize">{{ category }}:</h1>
+    </div>
+    <div class="container-fluid d-flex justify-content-center mb-5">
         <div class="d-flex col-10 row justify-content-around">
             <div class="col-auto row" v-for="product in products">
                 <ProductCard :product="product"></ProductCard>

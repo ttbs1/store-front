@@ -1,5 +1,8 @@
 <template>
-    <div class="container-fluid d-flex justify-content-center my-5">
+    <div class="container-fluid mt-5">
+        <h1>Best Sellers:</h1>
+    </div>
+    <div class="container-fluid d-flex justify-content-center mb-5">
         <div class="d-flex row justify-content-around">
             <div class="col-auto row" v-for="product in bestSellers">
                 <ProductCard :product="product"></ProductCard>
@@ -59,5 +62,9 @@ export default {
 
 .card-rating {
     font-size: 10px;
+}
+
+h1{
+    font-size: 26px;
 }
 </style>
