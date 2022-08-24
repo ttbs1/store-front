@@ -1,6 +1,7 @@
 # store-front
 
-This is a frontend project to practice VUE consuming the [Fake Store API](https://fakestoreapi.com/) <br><br>
+This is a frontend project to practice VUE consuming the [Fake Store API](https://fakestoreapi.com/) <br>
+It is hosted [HERE](https://ttbs1-store-front.herokuapp.com/) with Heroku for easy access <br><br>
 Didn't go too far with the layout cause it wasn't the purpouse here, just did the basics, responsivity is working,
 didn't implement all the functions as well because the API didn't offer resources like search
 and altough it allows to use POST, PUT, PATCH and DELETE, it doesn't change the database, 
